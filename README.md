@@ -62,10 +62,3 @@ model comparison tab.
 **Best model:** Linear SVM (TF-IDF, unigrams+bigrams, C=0.3 after tuning), calibrated with
 `CalibratedClassifierCV` in the app so it can output class probabilities
 
-## Notes & limitations
-- Labels are 5-class ordinal sentiment (0=negative … 4=positive) on short Rotten Tomatoes sub-phrases,
-  not full reviews — many phrases are single words or fragments, making this harder than sentence-level
-  sentiment analysis.
-- BERT/transformer fine-tuning was intentionally out of scope for the notebook (no GPU / no internet
-  access to Hugging Face in the environment it was built in) — see the notebook's final section for
-  notes on how to extend this with a transformer model if you have GPU access.
