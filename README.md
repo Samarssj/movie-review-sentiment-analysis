@@ -60,7 +60,7 @@ model comparison tab.
 | Random Forest | 0.5109 |
 
 **Best model:** Linear SVM (TF-IDF, unigrams+bigrams, C=0.3 after tuning), calibrated with
-`CalibratedClassifierCV` in the app so it can output class probabilities.
+`CalibratedClassifierCV` in the app so it can output class probabilities
 
 ## Notes & limitations
 - Labels are 5-class ordinal sentiment (0=negative … 4=positive) on short Rotten Tomatoes sub-phrases,
