@@ -1,0 +1,22 @@
+{
+  "Naive Bayes": {
+    "accuracy": 0.5736838692946058,
+    "train_time_sec": 0.023369550704956055
+  },
+  "Logistic Regression": {
+    "accuracy": 0.5948845954356846,
+    "train_time_sec": 8.415796279907227
+  },
+  "Linear SVM": {
+    "accuracy": 0.5998443983402489,
+    "train_time_sec": 3.0855207443237305
+  },
+  "Random Forest": {
+    "accuracy": 0.5108921161825726,
+    "train_time_sec": 155.83740735054016
+  },
+  "Linear SVM (tuned, calibrated)": {
+    "accuracy": 0.6012,
+    "train_time_sec": null
+  }
+}
