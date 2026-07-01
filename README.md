@@ -49,6 +49,12 @@ streamlit run app.py
 Opens at http://localhost:8501 — type in a review, see the predicted sentiment and confidence, plus a
 model comparison tab.
 
+<img width="1440" height="900" alt="Screenshot 2026-07-01 at 12 50 11" src="https://github.com/user-attachments/assets/1f2e8ea1-b2dc-4292-9117-b33697be612a" />
+
+<img width="1440" height="900" alt="Screenshot 2026-07-01 at 12 50 17" src="https://github.com/user-attachments/assets/7156c811-c897-4a30-b821-f1d172a1ff42" />
+
+
+
 ## Results summary
 
 | Model | Validation Accuracy |
