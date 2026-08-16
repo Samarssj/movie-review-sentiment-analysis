@@ -1,0 +1,19 @@
+flowchart TD
+    classDef input fill:#311d2d,stroke:#ef476f,color:#fffaf2,stroke-width:1.5px;
+    classDef step fill:#2b1f35,stroke:#ffd166,color:#fffaf2,stroke-width:1.5px;
+    classDef decision fill:#1b263b,stroke:#70d6c5,color:#f7f4ef,stroke-width:1.5px;
+    classDef output fill:#142d2b,stroke:#70d6c5,color:#fffaf2,stroke-width:1.5px;
+
+    START(["Enter a movie phrase"]):::input
+    EXAMPLE{"Use a director's pick?"}:::decision
+    TEXT["Review text in Streamlit session"]:::step
+    VEC["TF-IDF transform\nusing the fitted vectorizer"]:::step
+    MODEL["Calibrated Linear SVM\npredicts five sentiment classes"]:::step
+    PROBA["Class probabilities\nfor the full emotional spectrum"]:::step
+    SCORE["Weighted emotional score\nplus confidence"]:::step
+    VIEW["Verdict card · probability bars\ncontext stats · model reel"]:::output
+
+    START --> EXAMPLE
+    EXAMPLE -->|"Yes"| TEXT
+    EXAMPLE -->|"No"| TEXT
+    TEXT --> VEC --> MODEL --> PROBA --> SCORE --> VIEW

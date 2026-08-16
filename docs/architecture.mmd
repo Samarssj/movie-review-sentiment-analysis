@@ -1,0 +1,41 @@
+flowchart LR
+    %% ReelFeel architecture
+    classDef source fill:#1b263b,stroke:#70d6c5,color:#f7f4ef,stroke-width:1.5px;
+    classDef process fill:#2b1f35,stroke:#ffd166,color:#fffaf2,stroke-width:1.5px;
+    classDef artifact fill:#311d2d,stroke:#ef476f,color:#fffaf2,stroke-width:1.5px;
+    classDef output fill:#142d2b,stroke:#70d6c5,color:#fffaf2,stroke-width:1.5px;
+
+    subgraph DATA["Data & exploration"]
+        TSV["Rotten Tomatoes\ntrain.tsv / test.tsv"]:::source
+        NB["Jupyter notebook\nEDA · training · evaluation"]:::process
+        TSV --> NB
+    end
+
+    subgraph ML["Classical ML pipeline"]
+        TFIDF["TF-IDF vectorizer\n20K unigram + bigram features"]:::process
+        MODELS["Model comparison\nNB · Logistic Regression · SVM · RF"]:::process
+        TUNED["Tuned Linear SVM\ncalibrated probabilities"]:::process
+        NB --> TFIDF --> MODELS --> TUNED
+    end
+
+    subgraph ARTIFACTS["Versioned artifacts"]
+        VEC["vectorizer.pkl"]:::artifact
+        MODEL["model.pkl"]:::artifact
+        RESULTS["classical_results.json"]:::artifact
+        TUNED --> VEC
+        TUNED --> MODEL
+        MODELS --> RESULTS
+    end
+
+    subgraph APP["ReelFeel Streamlit app"]
+        UI["Cinematic review interface"]:::process
+        LOAD["Load cached artifacts"]:::process
+        PREDICT["Transform phrase → predict"]:::process
+        CHARTS["Probability bars · model reel\ntraining distribution"]:::output
+        UI --> LOAD --> PREDICT --> CHARTS
+    end
+
+    VEC --> LOAD
+    MODEL --> LOAD
+    RESULTS --> LOAD
+    PREDICT -->|"sentiment + confidence"| UI
