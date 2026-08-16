@@ -13,7 +13,15 @@
 
 <br />
 
-<img src="https://skillicons.dev/icons?i=python,streamlit,pandas,numpy,sklearn,altair,jupyter,git,github" alt="Technology stack icons" />
+<p align="center">
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" /></a>
+  <a href="https://streamlit.io/"><img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" /></a>
+  <a href="https://pandas.pydata.org/"><img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" /></a>
+  <a href="https://numpy.org/"><img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" /></a>
+  <a href="https://scikit-learn.org/"><img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn" /></a>
+  <a href="https://altair-viz.github.io/"><img src="https://img.shields.io/badge/Altair-4C78A8?style=for-the-badge" alt="Altair" /></a>
+  <a href="https://jupyter.org/"><img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" /></a>
+</p>
 
 <br />
 
@@ -54,9 +62,6 @@ The Streamlit app uses a cinema-inspired visual system: a near-black theater bac
 
 ## Technology stack
 
-| Python | Streamlit | Pandas | NumPy | scikit-learn | Altair | Jupyter |
-| --- | --- | --- | --- | --- | --- | --- |
-| [<img src="https://skillicons.dev/icons?i=python" width="48" alt="Python" />](https://www.python.org/) | [<img src="https://skillicons.dev/icons?i=streamlit" width="48" alt="Streamlit" />](https://streamlit.io/) | [<img src="https://skillicons.dev/icons?i=pandas" width="48" alt="Pandas" />](https://pandas.pydata.org/) | [<img src="https://skillicons.dev/icons?i=numpy" width="48" alt="NumPy" />](https://numpy.org/) | [<img src="https://skillicons.dev/icons?i=sklearn" width="48" alt="scikit-learn" />](https://scikit-learn.org/) | [<img src="https://cdn.simpleicons.org/altair/4C78A8" width="48" alt="Altair" />](https://altair-viz.github.io/) | [<img src="https://skillicons.dev/icons?i=jupyter" width="48" alt="Jupyter" />](https://jupyter.org/) |
 
 | Layer | Tools | Role in the project |
 | --- | --- | --- |
