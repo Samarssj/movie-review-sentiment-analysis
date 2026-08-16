@@ -47,9 +47,6 @@ The project combines a reproducible classical machine-learning workflow with a c
 
 The Streamlit app uses a cinema-inspired visual system: a near-black theater backdrop, warm marquee gold, coral and teal signal colors, serif display typography, film-strip details, and glassy result cards.
 
-<p align="center">
-  <img src="docs/assets/reelfeel-analyzer.webp" alt="ReelFeel cinematic sentiment analyzer interface" width="88%" />
-</p>
 
 <p align="center">
   <img src="docs/assets/reelfeel-model-reel.webp" alt="ReelFeel model comparison interface" width="88%" />
